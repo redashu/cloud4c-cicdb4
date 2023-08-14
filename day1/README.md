@@ -37,8 +37,7 @@ Resolving Dependencies
 ### adding jenkins software repo 
 
 ```
-sudo wget -O /etc/yum.repos.d/jenkins.repo \
->     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
 ```
 
 ### update key license 
