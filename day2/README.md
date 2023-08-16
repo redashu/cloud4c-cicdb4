@@ -50,4 +50,18 @@ sudo yum install git -y
 
 <img src="jcx.png">
 
+### Installing docker on jenkins server
 
+```
+ 23  sudo  yum install docker -y
+   24  history 
+[ec2-user@ip-172-31-1-174 ~]$ sudo systemctl enable docker 
+Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service to /usr/lib/systemd/system/docker.service.
+[ec2-user@ip-172-31-1-174 ~]$ sudo systemctl start  docker 
+[ec2-user@ip-172-31-1-174 ~]$ sudo systemctl status   docker 
+● docker.service - Docker Application Container Engine
+   Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; vendor preset: disabled)
+   Active: active (running) since Wed 2023-08-16 13:26:37 UTC; 5s ago
+     Docs: https://docs.docker.com
+
+```
