@@ -32,4 +32,22 @@
 
 <img src="runj.png">
 
+### understanding integration 
+
+<img src="int.png">
+
+### By default jenkins is not integrated with Github 
+
+<img src="error.png">
+
+### Installing git on the server where jenkins is running 
+
+```
+sudo yum install git -y 
+```
+
+### java code using jenkins 
+
+<img src="jcx.png">
+
 
