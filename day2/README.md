@@ -11,3 +11,25 @@
    CGroup: /system.slice/jenkins.service
            └─3047 /usr/bin/java -Dj
 ```
+
+### Understanding jenkins role -- 
+
+<img src="jrole.png">
+
+### jobs in jenkins -- set of instruction 
+
+<img src="sti.png">
+
+### creating job and configuration steps 
+
+<img src="jc2.png">
+
+### after job configuration we have -- steps 
+
+<img src="steps.png">
+
+### running a job and understanding it 
+
+<img src="runj.png">
+
+
