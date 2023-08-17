@@ -43,3 +43,17 @@ sudo chmod 777  /var/run/docker.sock
 sudo usermod -aG docker  jenkins
 ```
 
+### understanding automated build process
+
+<img src="autob.png">
+
+## pull and push triggers
+
+<img src="tg.png">
+
+### jenkins job trigger options 
+
+<img src="jtr.png">
+
+
+
