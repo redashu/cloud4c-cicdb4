@@ -31,4 +31,15 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service 
      Docs: https://docs.docker.com
 ```
 
+### giving permission to the use currently 
+
+```
+sudo chmod 777  /var/run/docker.sock
+```
+
+### permanent solution 
+
+```
+sudo usermod -aG docker  jenkins
+```
 
