@@ -20,3 +20,31 @@
 
 <img src="jfcl.png">
 
+### pipeline job 
+
+```
+pipeline  {
+    agent any // jenkins master will automatically decide where to run jobs
+    stages {
+        stage('printing message') {
+            steps {
+                echo 'Hello world this is jenkinsfile'
+            }
+            
+        }
+        stage('checking current time') {
+            steps {
+                sh 'date'
+            }
+            
+        }
+        
+        stage('checking calendar') {
+            steps {
+                sh 'cal'
+            }
+        }
+        
+    }
+}
+```
