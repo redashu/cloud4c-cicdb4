@@ -250,3 +250,8 @@ pipeline {
 }
 
 ```
+### adding additional points in CI pipeline 
+
+<img src="add.png">
+
+### 
