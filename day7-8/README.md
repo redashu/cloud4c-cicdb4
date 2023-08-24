@@ -169,3 +169,45 @@ pipeline {
 }
 
 ```
+
+### jenkins integration with k8s
+
+```
+[root@ip-172-31-7-110 ~]# curl -LO https://dl.k8s.io/release/v1.28.0/bin/linux/amd64/kubectl
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   138  100   138    0     0   1829      0 --:--:-- --:--:-- --:--:--  1840
+100 47.5M  100 47.5M    0     0  65.7M      0 --:--:-- --:--:-- --:--:-- 40.6M
+[root@ip-172-31-7-110 ~]# 
+[root@ip-172-31-7-110 ~]# ls
+kubectl
+[root@ip-172-31-7-110 ~]# mv kubectl  /usr/bin/
+[root@ip-172-31-7-110 ~]# chmod  +x /usr/bin/kubectl 
+[root@ip-172-31-7-110 ~]# 
+[root@ip-172-31-7-110 ~]# su -s /bin-bash: chsh: command not found
+^C
+[root@ip-172-31-7-110 ~]# su -s /bin/bash jenkins
+bash-4.2$ 
+bash-4.2$ cd
+bash-4.2$ 
+bash-4.2$ pwd
+/var/lib/jenkins
+bash-4.2$ mkdir .kube
+bash-4.2$ cd .kube/
+bash-4.2$ ls
+bash-4.2$ wget 15.207.253.127/admin.conf
+--2023-08-24 12:53:30--  http://15.207.253.127/admin.conf
+Connecting to 15.207.253.127:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 5645 (5.5K) [text/plain]
+Saving to: 'admin.conf'
+
+100%[===================================================================================================================>] 5,645       --.-K/s   in 0s      
+
+2023-08-24 12:53:30 (328 MB/s) - 'admin.conf' saved [5645/5645]
+
+bash-4.2$ ls
+admin.conf
+bash-4.2$ mv admin.conf  config
+
+```
